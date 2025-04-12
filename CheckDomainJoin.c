@@ -20,6 +20,10 @@ BOOL CheckDomainStatus(){
 			return FALSE;
 		}
 	}
+	else {
+		printf("[!] Error checking domain status: %d\n", nStatus);
+		return FALSE;
+	}
 }
 
 int main() {
